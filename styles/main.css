@@ -13,14 +13,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
-    padding: 1rem;
+    padding: 0.2rem;
     max-width: 1200px;
 }
 
