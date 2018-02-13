@@ -30,7 +30,7 @@ header h1 {
 }
 
 header img {
-    float: center;
+    width: 200px;
     margin-top: 1em;
     width: 120px;
     border: 5px solid black;
@@ -77,10 +77,13 @@ main h2 {
 }
 
 main figure { 
-    margin: 0 0 .2rem 2%; width:96%; 
+    margin: 0 0 .2rem 2%; 
+    width: 96%; 
 }
 
-main figure img { 
+main figure img {
+    height: 300px;
+    width: 100%
 }
 
 #sec1 {
@@ -102,6 +105,10 @@ div.current {
     display: inline-flex;
     align-items: center;
     font-size: 2em
+}
+
+div.current picture img{
+    width: 100px;
 }
 
 div.highlow, div.conditions {
