@@ -1,0 +1,156 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+    box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    margin: 0 0 0 2%; 
+    width:96%;
+}
+header h1 {
+    font-size: 3.5em;
+    color: #0EAB9A;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+header img {
+    float: center;
+    margin-top: 1em;
+    width: 120px;
+    border: 5px solid black;
+}
+
+header .subheading {
+    font-size: 2em;
+    padding: 0px;
+    color: black;
+}
+
+nav {}
+nav button {}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00887A;
+    margin: 0 0 .2rem 2%; width:96%;
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: #92DAD3;
+}
+
+nav ul li.active a {
+    background-color: #FFBA3B;
+    color: #555541;
+}
+nav ul li a:hover {
+    background-color: #FFBA3B;
+    color: #FFF;
+}
+
+main {}
+main h2 {
+    font-size: 1.8em;
+}
+
+main figure { 
+    margin: 0 0 .2rem 2%; width:96%; 
+}
+
+main figure img { 
+}
+
+#sec1 {
+    margin: 1.5em 1em 0em;
+    padding: 0;
+}
+
+section.summary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.summary div {
+    flex: 0 0 200px;
+}
+
+div.current {
+    display: inline-flex;
+    align-items: center;
+    font-size: 2em
+}
+
+div.highlow, div.conditions {
+    font-size: 1.2em;
+}
+
+section.forecast {
+    display: none;
+}
+
+article {
+    margin: 0 0 0 2%; 
+    width:96%;
+    background-color: #92DAD3;
+    padding: 10px;
+}
+
+article h3 {
+    font-size: 1.6em;
+}
+
+article p.town-article {
+    overflow: hidden;
+    zoom: 1;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%; /* fill the page in the small/phone view */
+    margin: 10px;  
+}
+
+footer {
+    margin: 0 0 0 2%; 
+    width:96%;
+}
+
+footer aside {
+    background-color: #FFC966;
+    font-size: .9em;
+    padding: 15px;
+    margin-top: 2%;
+}
+
+footer aside p {
+    margin: 0;
+    padding: 3px;
+}
+footer>p {
+    background-color: #FFBA3B;
+    padding: 15px;
+    margin-top: 0;
+}
