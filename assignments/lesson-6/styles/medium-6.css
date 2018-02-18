@@ -1,0 +1,61 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+    header h1 {
+        font-size: 3.5em;
+        color: #0EAB9A;
+        text-align: center;
+        margin: 1em 1em 0em;
+    }
+    
+    header img {
+        float: left;
+        margin: 1em;
+        width: 150px;
+    }
+    
+    nav button { 
+        display:none; 
+    }  /* hamburger button does not need to be shown */
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-color: #00887A;
+        margin: 0 0 .2rem 2%; width:96%;
+    }
+
+    nav ul li {
+        display: inline;
+        float: left;
+    }
+  
+    section.forecast {
+        display: block;
+    }
+    
+    section table {
+        margin: 2% 0 4% 2%; 
+        width:96%;
+        border-collapse: collapse;
+    }
+
+    section table, th, td {
+        border: 3px solid #FFA909;
+    }
+
+    td, th {
+        padding: 4px;
+    }
+
+    th {
+        background-color: #FFA909;
+    }
+  
+    article p.town-article img { 
+        width: 62.666%; float:right; 
+    }  /* responsive images */
+    
+    
+}
