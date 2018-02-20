@@ -17,7 +17,7 @@
     <body>
 
         <header>
-            <img src="images/chromatic-2031245_1280.png" alt="The site logo">
+            <img src="images/chromatic-2031245_200.png" alt="The site logo">
             <h1>Whatever the Weather</h1>
             <div class="subheading"><em>... we're in it together.</em></div>
         </header>
@@ -25,7 +25,7 @@
         <!-- site navigation use placeholder references -->
         <nav>
             <button onclick="toggleNavMenu()">&#9776;</button>
-            <ul>
+            <ul id=primaryNav class="hide">
                 <li><a href="#">Home</a></li>
                 <li class="active"><a href="#">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
@@ -53,7 +53,7 @@
                 <div class="current">
                     <p>Sunny</p>
                     <picture>
-                        <img src="images/sun-159392_1280.png" alt="sunny" >
+                        <img src="images/sun-159392_100.png" alt="sunny" >
                     </picture>
                 </div> 
                 <div class="highlow">
@@ -104,7 +104,10 @@
             <article>
                 <h3>Franklin Breaks Record</h3>	
                 <p class="town-article">
-                    <img src="images/david-marcu-1266.jpg" alt="Little town of Franklin, MU">
+                    <img src="images/david-marcu-1266.jpg" alt="Little town of Franklin, MU" sizes="50vw"
+                     srcset="images/david-marcu-200-100.jpg 200w,
+                             images/david-marcu-500-88.jpg 500w,
+                             images/david-marcu-800-71.jpg 800w">
                     Advisory: statements that are issued by the national weather service for probable weather situations of inconvenience that do not carry the danger of warning criteria, but, if not observed, could lead to hazardous situations. some examples include snow advisories stating possible slick streets, or fog advisories for patchy fog condition causing temporary restrictions to visibility. aviation weather center: as one of the national centers for environmental prediction, it is the national center for weather information that is used daily by the federal aviation administration, commercial airlines, and private pilots. it is entering a new phase of service, growing to accept global forecasting responsibilities. : for further information, contact the awc, located in kansas city, missouri. awips: acronym for advanced weather interactive processing system.
                 </p>
             </article>		  
@@ -119,7 +122,7 @@
                 <p>(999)999.9999</p>
                 <p>contact@theurl.com</p>
             </aside>
-            <p class="footer-bar">&copy;2018 All Rights Reserved | Whatever the Weather | <span id="currentdate">02.12.18</span></p>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Whatever the Weather | <span id="currentdate"></span></p>
         </footer>
 
         <script src="scripts/hamburger.js"></script>

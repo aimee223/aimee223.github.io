@@ -1,5 +1,4 @@
 @media only screen and (min-width: 37.5em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
     header h1 {
         font-size: 3.5em;
@@ -12,23 +11,6 @@
         float: left;
         margin: 1em;
         width: 150px;
-    }
-    
-    nav button { 
-        display:none; 
-    }  /* hamburger button does not need to be shown */
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        overflow: hidden;
-        background-color: #00887A;
-        margin: 0 0 .2rem 2%; width:96%;
-    }
-
-    nav ul li {
-        display: inline;
-        float: left;
     }
   
     section.forecast {
@@ -55,7 +37,5 @@
   
     article p.town-article img { 
         width: 62.666%; float:right; 
-    }  /* responsive images */
-    
-    
+    }
 }

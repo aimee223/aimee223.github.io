@@ -42,36 +42,54 @@ header .subheading {
     color: black;
 }
 
-nav {}
-nav button {}
+nav {
+    background-color: #00887A;
+    margin: 0 0 .2rem 2%; 
+    width:96%;
+    text-align: left;
+}
+
+nav button {
+    margin: .2rem 2% 0;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #92DAD3;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
     background-color: #00887A;
-    margin: 0 0 .2rem 2%; width:96%;
-    
+    margin: 0; 
 }
 
 nav ul li a {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
     color: #92DAD3;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+
+nav ul li a:hover {
+    background-color: #FFBA3B;
+    color: #FFF;
 }
 
 nav ul li.active a {
     background-color: #FFBA3B;
     color: #555541;
 }
-nav ul li a:hover {
-    background-color: #FFBA3B;
-    color: #FFF;
+
+nav ul.hide {
+    display:none;
 }
 
-main {}
 main h2 {
     font-size: 1.8em;
 }
@@ -134,7 +152,7 @@ article p.town-article {
     zoom: 1;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article img {
     width: 100%; /* fill the page in the small/phone view */
     margin: 10px;  
 }
