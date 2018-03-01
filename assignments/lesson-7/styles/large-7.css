@@ -1,0 +1,65 @@
+@media only screen and (min-width: 64em) {
+  
+    header {
+        margin: 0 0 0 7%; 
+        width:86%;
+    }
+    
+    nav button { 
+        display:none; 
+    } 
+    
+    nav {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 .2rem 7%; 
+        width:86%;
+    }
+    
+    nav ul.hide {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    
+    nav ul li a {
+        border-top: none;
+    }
+    
+    main figure { 
+        margin: 0 0 .2rem 7%; 
+        width:86%; 
+    }
+    
+    section table {
+        margin: 2% 0 4% 7%; 
+        width:86%;
+    }
+    
+    article {
+        margin: 0 0 0 7%; 
+        width:86%;
+    }
+    
+    article p.town-article {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article p.town-article img { 
+        flex-basis: content;
+        width: 30%;
+        align-self: flex-start;
+    }
+    
+    footer {
+        margin: 0 0 0 7%; 
+        width:86%;
+    }
+    
+    main.gallery {
+        margin: 2% 7% 0 7%;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: hidden;
+        grid-column-gap: 1em;
+    }
+}
