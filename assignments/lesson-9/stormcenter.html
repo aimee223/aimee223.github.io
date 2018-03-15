@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather Franklin, MU - Franklin Weather | Whatever the Weather</title>
+        <meta name="author" content="Aimee Tolman">
+        <meta name="description" content="This page displays current weather and weather-related news for Franklin, MU.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header>
+            <img src="images/chromatic-2031245_200.png" alt="The site logo">
+            <div class="title">
+                <h1>Whatever the Weather</h1>
+                <div class="subheading"><em>... we're in it together.</em></div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id=primaryNav class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li class="active"><a href="#">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>		
+        </nav>
+
+        <main>
+            <form action="thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend><br>
+                        Full name:  
+                        <input type="text" name="fullname" minlength="5" pattern="[/s-A-Za-z]" title="Full name must be a minimum of five characters and cannot include numbers or special characters, e.g. John Smith" required><br><br>
+                        Email:  
+                        <input type="email" name="email" placeholder="email@example.com"><br><br>
+                        Telephone:  
+                        <input type="tel" name="usrtel" required><br><br>
+                        Zip code:
+                        <input type="number" name="zipcode" required><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Storm Information</legend><br>
+                        Storm date:
+                        <input type="date" name="date"><br><br>
+                        Storm type:
+                        <input list="stormtypes" name="storm">
+                        <datalist id="stormtypes">
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                        </datalist><br><br>
+                        Storm severity:
+                        <input type="range" name="severity" min="1" max="10"><br><br>
+                        Storm region:
+                        <select name="region">
+                            <option value="Select Region" selected disabled>Select Region</option>
+                            <option value="Franklin">Franklin</option>
+                            <option value="Greenville">Greenville</option>
+                            <option value="Springfield">Springfield</option>
+                        </select><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Other Information</legend><br>
+                        User in-danger level:<br>
+                        <input type="radio" name="danger" value="yes">Yes<br>
+                        <input type="radio" name="danger" value="maybe">Maybe<br>
+                        <input type="radio" name="danger" value="no">No<br><br>
+                        Additional information or comments:<br>
+                        <textarea name="comments" rows="10" cols="25"></textarea><br><br>
+                        <input type="submit" value="Submit"><br><br>
+                </fieldset><br>
+                
+            </form>
+
+           
+        </main>
+
+        <footer>
+            <aside>
+                <p><b>Whatever the Weather</b></p>
+                <p>123 Main St</p>
+                <p>Franklin, MU 83454</p>
+                <p>(999)999.9999</p>
+                <p>contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Whatever the Weather | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+</html>
