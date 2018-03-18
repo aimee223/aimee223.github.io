@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather Franklin, MU - Franklin Weather | Whatever the Weather</title>
+        <meta name="author" content="Aimee Tolman">
+        <meta name="description" content="This page displays current weather and weather-related news for Franklin, MU.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header>
+            <img src="images/chromatic-2031245_200.png" alt="The site logo">
+            <div class="title">
+                <h1>Whatever the Weather</h1>
+                <div class="subheading"><em>... we're in it together.</em></div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id=primaryNav class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>		
+        </nav>
+
+        <main class="gallery">
+            <img src="images/ian-schneider-40781-unsplash-500px-80.jpg" alt="weather" sizes="28vw"
+                     srcset="images/ian-schneider-40781-unsplash-200px-100.jpg 200w,
+                     images/ian-schneider-40781-unsplash-500px-80.jpg 500w">
+            <img src="images/jeremy-bishop-480184-unsplash-500px-98.jpg" alt="weather" sizes="28vw"
+                     srcset="images/jeremy-bishop-480184-unsplash-200px-23.jpg 200w,
+                     images/jeremy-bishop-480184-unsplash-500px-98.jpg 500w">
+            <img src="images/joshua-reddekopp-315821-unsplash-500px-100.jpg" alt="weather" sizes="28vw"
+                     srcset="images/joshua-reddekopp-315821-unsplash-200px-100.jpg 200w,
+                     images/joshua-reddekopp-315821-unsplash-500px-100.jpg 500w">
+            <img src="images/niilo-isotalo-352745-unsplash-500px-97.jpg" alt="weather" sizes="28vw"
+                     srcset="images/niilo-isotalo-352745-unsplash-200px-100.jpg 200w,
+                     images/niilo-isotalo-352745-unsplash-500px-97.jpg 500w">
+            <img src="images/reza-shayestehpour-14238-unsplash-500px-98.jpg" alt="weather" sizes="28vw"
+                     srcset="images/reza-shayestehpour-14238-unsplash-200px-100.jpg 200w,
+                     images/reza-shayestehpour-14238-unsplash-500px-98.jpg 500w">
+            <img src="images/tevin-trinh-324186-unsplash-500px-96.jpg" alt="weather" sizes="28vw"
+                     srcset="images/tevin-trinh-324186-unsplash-200px-100.jpg 200w,
+                     images/tevin-trinh-324186-unsplash-500px-96.jpg 500w">
+        </main>
+
+        <footer>
+            <aside>
+                <p><b>Whatever the Weather</b></p>
+                <p>123 Main St</p>
+                <p>Franklin, MU 83454</p>
+                <p>(999)999.9999</p>
+                <p>contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Whatever the Weather | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+</html>
