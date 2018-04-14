@@ -29,19 +29,19 @@
     }
     
     main figure img {  
-        width: 95%;
+        width: 85%;
     }
     
     #callaction {
         font-size: 30px;
-        margin: 1.5em 1em 0em;
+        width: 85%;
         padding: 0;
         color: #414244;
     }
     
     section.images {
         display:inline-flex;
-        width: 95%;
+        width: 85%;
     }
     
     #breaksimg {
